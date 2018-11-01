@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory 
+        android:title="@string/display_settings"
+        android:key="@string/pref_key_display_settings">
+        
+        <CheckBoxPreference 
+            android:title="@string/enable_hex"
+            android:summaryOn="@string/enable_hex_summary" 
+            android:summaryOff="@string/enable_hex_summary" 
+            android:key="@string/pref_enable_hex" 
+            android:defaultValue="@bool/default_pref_enable_hex" 
+            android:persistent="true"/>
+        
+        <ListPreference
+            android:title="@string/display_font"
+            android:entries="@array/display_font_titles"
+            android:entryValues="@array/display_font_values"
+            android:key="pref_display_font"
+            android:negativeButtonText="@null"
+        	android:positiveButtonText="@null"
+        	android:defaultValue="@string/display_font_default"
+        	android:persistent="true"/>
+        
+    </PreferenceCategory>
+</PreferenceScreen>

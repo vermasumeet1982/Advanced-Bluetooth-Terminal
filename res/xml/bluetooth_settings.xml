@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:title="@string/bluetooth_settings"
+        android:key="@string/pref_key_bluetooth_settings">
+        
+        <!--  <Preference 
+            android:title="@string/connect"
+            android:key="@string/pref_bluetooth_connect"
+            android:icon="@drawable/search" 
+            android:summary="@string/bluetooth_connect_summary"
+            android:persistent="false">
+           <intent android:targetPackage="com.sumeet.apps" 
+                	android:targetClass="com.sumeet.apps.ABTConnectActivity"/>
+        </Preference>-->
+        
+        <CheckBoxPreference 
+            android:title="@string/listen"
+            android:summaryOn="@string/bluetooth_listen_summary_on" 
+            android:summaryOff="@string/bluetooth_listen_summary_off" 
+            android:key="@string/pref_bluetooth_listen" 
+            android:defaultValue="@bool/default_pref_bluetooth_listen" 
+            android:persistent="true"/>
+
+        <CheckBoxPreference 
+            android:title="@string/secure_connection"
+            android:summaryOn="@string/secure_connection_summary_on" 
+            android:summaryOff="@string/secure_connection_summary_off" 
+            android:key="@string/pref_secure_connection" 
+            android:defaultValue="@bool/default_pref_secure_connection" 
+            android:persistent="true"/>
+        
+        <EditTextPreference 
+            android:title="@string/discoverability_timeout"
+            android:summary="@string/discoverable_timeout_summary"
+            android:key="@string/pref_discoverable_timeout"
+            android:defaultValue="@string/discoverable_default_timeout"
+            android:persistent="true"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="number"/>
+        
+        <CheckBoxPreference
+            android:title="@string/log_ascii_data"
+            android:summaryOn="@string/log_ascii_data_summary"
+            android:summaryOff="@string/log_ascii_data_summary"
+            android:key="@string/pref_log_ascii_data"
+            android:defaultValue="@bool/default_pref_log_ascii_data"
+            android:persistent="true"/>
+        
+        <CheckBoxPreference
+            android:title="@string/log_hex_data"
+            android:summaryOn="@string/log_hex_data_summary"
+            android:summaryOff="@string/log_hex_data_summary"
+            android:key="@string/pref_log_hex_data"
+            android:dependency="@string/pref_enable_hex"
+            android:defaultValue="@bool/default_pref_log_hex_data"
+            android:persistent="true"/>
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

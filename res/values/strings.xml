@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Advanced BT Terminal</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_ascii_section">ASCII</string>
+    <string name="title_hex_section">HEX</string>
+    <string name="title_section3">Section 3</string>
+    <string name="send">Send</string>
+    <string name="clear">Clear</string>
+    <string name="connect">Connect</string>
+    
+     <string name="bluetooth_settings">Bluetooth Settings</string>
+     <string name = "pref_key_bluetooth_settings">pref_key_bluetooth_settings</string>
+     
+    <string name="bluetooth_connect_summary">Search and Connect to Bluetooth SPP Devices</string>
+    <string name="pref_bluetooth_connect">pref_bluetooth_connect</string>
+    
+    <string name="listen">Listen For Connection</string>
+    <string name="bluetooth_listen_summary_off">Start Bluetooth SPP Server</string>
+    <string name="bluetooth_listen_summary_on">Stop Bluetooth SPP Server</string>
+    <string name="pref_bluetooth_listen">pref_bluetooth_listen</string>
+    <bool name="default_pref_bluetooth_listen">false</bool>
+    
+    <string name="title_activity_abtconnect">Bluetooth Connection</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="search_devices">Search</string>
+    <string name="cancel_search">Cancel</string>
+    <string name="no_devices_found">No Devices Found</string>
+    <string name="led_indication">led</string>
+    <string name="send_file">Send File</string>
+    
+    <string name="enable_hex">Enable Hex Screen Data</string>
+    <string name="enable_hex_summary">Enabling Hexadecimal Data will degrade application performace during high data volume transfers</string>
+    <string name="pref_enable_hex">pref_enable_hex</string>
+    <bool name="default_pref_enable_hex">true</bool>
+    
+	<string name="secure_connection">Secure Connection</string>
+    <string name="secure_connection_summary_on">Create Secure Bluetooth RFCOMM connection. Setting takes effect when new connection is created</string>
+    <string name="secure_connection_summary_off">Create Insecure Bluetooth RFCOMM connection (Encryption/MITM Protection Disabled). 
+        Setting takes effect when new connection is created</string>
+    <string name="pref_secure_connection">pref_secure_connection</string>
+    <bool name="default_pref_secure_connection">true</bool>
+    
+    <string name="discoverability_timeout">Discoverable Timeout (sec)</string>
+    <string name="discoverable_timeout_summary">Valid Range 10-300 seconds. Use 0 for indefinite discoverability. 
+        Default value: 0</string>
+    <string name="discoverable_default_timeout">0</string>
+    <string name="pref_discoverable_timeout">pref_discoverable_timeout</string>
+    
+    <string name="log_ascii_data">Log ASCII Data</string>
+    <string name="log_ascii_data_summary">ASCII Data will be saved in /storage/emulated/0/ABT/ABT_date_time.txt</string>
+    <string name="pref_log_ascii_data">pref_log_file</string>
+    <bool name="default_pref_log_ascii_data">false</bool>
+    
+    <string name="log_hex_data">Log Hex Data</string>
+    <string name="log_hex_data_summary">HEX Data will be saved in /storage/emulated/0/ABT/ABT_HEX_date_time.txt</string>
+    <string name="pref_log_hex_data">pref_log_hex_file</string>
+    <bool name="default_pref_log_hex_data">false</bool>
+    
+     <string name="display_settings">Display Settings</string>
+     <string name = "pref_key_display_settings">pref_key_display_settings</string>
+     
+     <string name="display_font">Display Font</string>
+     <string-array name="display_font_titles">
+        <item>6pt</item>
+        <item>7pt</item>
+        <item>8pt</item>
+        <item>9pt</item>
+        <item>10pt</item>
+        <item>11pt</item>
+        <item>12pt</item>
+        <item>13pt</item>
+        <item>14pt</item>
+        <item>15pt</item>
+        <item>16pt</item>
+        <item>17pt</item>
+        <item>18pt</item>
+        <item>19pt</item>
+        <item>20pt</item>
+    </string-array>
+    <string-array name="display_font_values">
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string name="pref_display_font">pref_display_font</string>
+    <string name="display_font_default">10</string>
+    
+</resources>

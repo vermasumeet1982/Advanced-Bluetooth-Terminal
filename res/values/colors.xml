@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="color_grey">#E6E6E6</color>
+    <color name="settings_bkgnd">#494D4E</color>
+    <color name="settings_text">#DBE1DE</color>
+    <color name="color_white">#FDFDFD</color>
+    <color name="color_black">#404040</color>
+    
+</resources>
